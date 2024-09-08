@@ -308,10 +308,15 @@ h2 {
 /********* Bottom Bar CSS *********/
 /**********************************/
 .bottom-bar {
-    padding: 15px 0;
-    background: #ffffff;
-    margin-bottom: 20px;
+    padding: 15px 0; /* Padding for top and bottom spacing */
+    background: #ffffff; /* White background for the bottom bar */
+    margin-bottom: 20px; /* Space below the bottom bar */
+    display: flex; /* Ensure the bottom bar elements are aligned using flexbox */
+    justify-content: space-between; /* Space out the logo, search, and user elements */
+    align-items: center; /* Vertically center the elements */
+    overflow: hidden; /* Hide overflow if any element exceeds its container */
 }
+
 
 .bottom-bar .logo {
     text-align: left; /* Align the logo to the left */
