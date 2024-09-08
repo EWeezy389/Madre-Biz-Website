@@ -316,10 +316,6 @@ h2 {
 .bottom-bar .logo {
     text-align: left;
     overflow: hidden;
-    display: flex;
-    justify-content: center; /* Center the logo */
-    align-items: center;
-    max-height: 150px; /* Control the height of the container */
 }
 
 .bottom-bar .logo-img {
