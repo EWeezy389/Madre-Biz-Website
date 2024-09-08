@@ -314,9 +314,14 @@ h2 {
 }
 
 .bottom-bar .logo {
-    text-align: left;
-    overflow: hidden;
+    text-align: left; /* Align the logo to the left */
+    overflow: hidden; /* Prevent overflow */
+    display: flex; /* Flexbox to center content vertically */
+    justify-content: flex-start; /* Align content (logo) to the left */
+    align-items: center; /* Center the logo vertically within the container */
+    max-height: 150px; /* Control the height of the logo container */
 }
+
 
 .bottom-bar .logo-img {
     max-width: 100%; /* Let the image scale within its container */
@@ -382,9 +387,15 @@ h2 {
     color: #ffffff;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
     .bottom-bar {
         max-height: 90px;
+    }
+
+    /* Ensure the logo scales within the larger screen sizes */
+    .logo-img {
+        max-height: 90px; /* Adjust the logo size to fit the bottom bar */
     }
 }
 
@@ -394,6 +405,11 @@ h2 {
     .bottom-bar .user {
         text-align: center;
         margin-bottom: 15px;
+    }
+
+    /* Ensure the logo scales properly on smaller screens */
+    .logo-img {
+        max-height: 75px; /* Smaller logo for mobile */
     }
     
     .bottom-bar .user {
